@@ -1,0 +1,35 @@
+{% extends '_base.html' %}
+    {% block title %}
+    Login
+    {% endblock title %}
+    {% block estilos %}
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/banana.css">
+
+    {% endblock estilos %}
+
+
+        {% block content %}
+        <div class="container">
+            <div class="bg-primary linha">
+                <h1>Fale Conosco</h1>
+            </div>
+            <div class="row" ><!--linha-->
+                <div class="col-12 col-md-6 coluna">
+                    <img src="\static\img\logo.jpeg" alt="logo" height="200px">
+                </div>
+                <div class="col-12 col-md-6 coluna">
+                    <form action = "http://juliom6.pythonanywhere.com/contato" method="POST" class="text-center">
+                    <h1 class = "h3 m-3 p"> Login </h1>
+                    <input class = "form-control m-2" type="text"  placeholder="Nome" >
+                    <input class = "form-control m-2" type="text"  placeholder="Sobrenome" >
+                    <input class = "form-control m-2" type="email" placeholder="email" >
+                    <input class = "form-control m-2" type="text"  placeholder="Assunto" >
+                    <textarea class = "form-control m-2" cols="30" rows="10" placeholder="Digite seu problema"></textarea>
+                    
+                    <button  type = "submit" class="btn btn-primary">Fazer login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        {% endblock content %}

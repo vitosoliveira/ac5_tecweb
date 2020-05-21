@@ -1,0 +1,14 @@
+.linha{
+        height: 150px;
+        display: flex;
+        align-items: flex-end;
+}
+.row {
+        height: 15px;
+
+}
+.coluna{
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+}
